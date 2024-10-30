@@ -64,3 +64,14 @@ footer {
   margin-top: 65px; /* Adjust to match the header + coloredSpace height */
   padding: 20px;
 }
+
+.post-container {
+  margin-top: 65px;
+  padding: 20px;
+  width: 400px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}

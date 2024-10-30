@@ -26,7 +26,19 @@
     </div>
     <main>
       <div class="coloredSpace"><h2></h2></div>
-      <div class="content"></div>
+      <div class="content">
+        <h2>Login</h2>
+        <form action="login_process.php" method="post">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit">Log In</button>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+      </div>
     </main>
     <footer>@Copyright by Tou Xiong Lor</footer>
   </body>
