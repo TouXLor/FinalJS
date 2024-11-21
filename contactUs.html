@@ -3,31 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Contact Us - Dish Dive</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contactUs.css" />
   </head>
   <body>
-    <div class="header-wrapper">
-      <header>
-        <div class="siteName">
-          <h1>Dish Dive</h1>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="index.html" class="buttonLinks">Home</a></li>
-            <li><a href="aboutUs.html" class="buttonLinks">About Us</a></li>
-            <li><a href="logIn.html" class="buttonLinks">Log In</a></li>
-            <li><a href="post.html" class="buttonLinks">Post Recipe</a></li>
-            <li><a href="contactUs.html" class="buttonLinks">Contact Us</a></li>
-            <li><a href="search.html" class="buttonLinks">Search</a></li>
-          </ul>
-        </nav>
-      </header>
-    </div>
-    <main>
-      <div class="coloredSpace"><h2></h2></div>
-      <div class="content"></div>
+    <!-- Header Section -->
+    <header class="header-wrapper">
+      <div class="logo">Dish Dive</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="logIn.html">Login</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="contactUs.html">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="contactContainer">
+      <div class="contactBox">
+        <h2>Contact Us</h2>
+        <form action="contact_process.php" method="post" class="contactForm">
+          <div class="formGroup">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="formGroup">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="formGroup">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+
+          <div class="formGroup">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="submitButton">Send Message</button>
+        </form>
+        <p class="signupPrompt">
+          Need an account? <a href="signup.html">Sign up here</a>
+        </p>
+      </div>
     </main>
-    <footer>@Copyright by Tou Xiong Lor</footer>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Tou Xiong Lor. All Rights Reserved.</p>
+      <p>Designed by Tou Xiong Lor</p>
+    </footer>
   </body>
 </html>

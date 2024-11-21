@@ -1,0 +1,86 @@
+/* Contact Us Page Styles */
+.contactContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: var(--primary-color);
+}
+
+.contactBox {
+  background-color: #3a3a3a; /* Slightly lighter grey for contrast */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+  width: 100%;
+}
+
+.contactBox h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--accent-color);
+}
+
+.contactForm .formGroup {
+  margin-bottom: 20px;
+}
+
+.contactForm label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4a4a4a;
+  color: #fff;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  outline: none;
+  background-color: #5a5a5a;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submitButton:hover {
+  background-color: #1c86ee;
+  transform: translateY(-2px);
+}
+
+.signupPrompt {
+  text-align: center;
+  margin-top: 20px;
+  color: #dcdcdc;
+}
+
+.signupPrompt a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.signupPrompt a:hover {
+  color: #1c86ee;
+}

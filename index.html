@@ -4,51 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dish Dive</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css" />
   </head>
   <body>
-    <div class="header-wrapper">
-      <header>
-        <div class="siteName">
-          <h1>Dish Dive</h1>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="index.html" class="buttonLinks">Home</a></li>
-            <li><a href="aboutUs.html" class="buttonLinks">About Us</a></li>
-            <li><a href="logIn.html" class="buttonLinks">Log In</a></li>
-            <li><a href="post.html" class="buttonLinks">Post Recipe</a></li>
-            <li><a href="contactUs.html" class="buttonLinks">Contact Us</a></li>
-            <li><a href="search.html" class="buttonLinks">Search</a></li>
-          </ul>
-        </nav>
-      </header>
-    </div>
-    <main>
-      <div class="coloredSpace"><h2></h2></div>
-      <div class="content">
-        <h2>Trending Recipes</h2>
-        <p>These are the trending recipes</p>
+    <!-- Header Section -->
+    <header class="header-wrapper">
+      <div class="logo">Dish Dive</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="logIn.html">Login</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="contactUs.html">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home Body Content Section -->
+    <section class="homeBodyContent">
+      <div class="bodyContent">
+        <h1>DELICIOUS <span class="highlight">FOOD RECIPES</span></h1>
         <p>
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It
-          has roots in a piece of classical Latin literature from 45 BC, making
-          it over 2000 years old. Richard McClintock, a Latin professor at
-          Hampden-Sydney College in Virginia, looked up one of the more obscure
-          Latin words, consectetur, from a Lorem Ipsum passage, and going
-          through the cites of the word in classical literature, discovered the
-          undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
-          1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and
-          Evil) by Cicero, written in 45 BC. This book is a treatise on the
-          theory of ethics, very popular during the Renaissance. The first line
-          of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
-          section 1.10.32. The standard chunk of Lorem Ipsum used since the
-          1500s is reproduced below for those interested. Sections 1.10.32 and
-          1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
-          reproduced in their exact original form, accompanied by English
-          versions from the 1914 translation by H. Rackham
+          Discover the best recipes packed with flavor and nutrition to satisfy
+          your cravings.
         </p>
+        <a href="#recipes" class="trendingButton">Trending Recipes</a>
       </div>
-    </main>
-    <footer>@Copyright by Tou Xiong Lor</footer>
+      <div class="homeImage">
+        <img src="images/HomeMenu.jpeg" alt="Food Menu" />
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Tou Xiong Lor. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,70 @@
+/* About Us Page Styles */
+.aboutContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: var(--primary-color);
+}
+
+.aboutBox {
+  background-color: #3a3a3a; /* Slightly lighter grey for contrast */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  max-width: 700px;
+  width: 100%;
+}
+
+.aboutBox h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--accent-color);
+}
+
+.mission {
+  margin-bottom: 30px;
+}
+
+.mission h3 {
+  margin-bottom: 15px;
+  color: var(--secondary-color);
+}
+
+.mission p {
+  color: #dcdcdc;
+}
+
+.howWeOperate {
+  margin-bottom: 30px;
+}
+
+.howWeOperate h3 {
+  margin-bottom: 15px;
+  color: var(--secondary-color);
+}
+
+.howWeOperate p {
+  color: #dcdcdc;
+  margin-bottom: 15px;
+}
+
+.howWeOperate h4 {
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.howWeOperate ul {
+  list-style: disc inside;
+  margin-bottom: 15px;
+  color: #dcdcdc;
+}
+
+.howWeOperate ul li {
+  margin-bottom: 10px;
+}
+
+.howWeOperate ul li strong {
+  color: var(--accent-color);
+}

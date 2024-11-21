@@ -3,43 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Loggin</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Login - Dish Dive</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login.css" />
   </head>
   <body>
-    <div class="header-wrapper">
-      <header>
-        <div class="siteName">
-          <h1>Dish Dive</h1>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="index.html" class="buttonLinks">Home</a></li>
-            <li><a href="aboutUs.html" class="buttonLinks">About Us</a></li>
-            <li><a href="logIn.html" class="buttonLinks">Log In</a></li>
-            <li><a href="post.html" class="buttonLinks">Post Recipe</a></li>
-            <li><a href="contactUs.html" class="buttonLinks">Contact Us</a></li>
-            <li><a href="search.html" class="buttonLinks">Search</a></li>
-          </ul>
-        </nav>
-      </header>
-    </div>
-    <main>
-      <div class="coloredSpace"><h2></h2></div>
-      <div class="content">
-        <h2>Login</h2>
-        <form action="login_process.php" method="post">
-          <label for="username">Username</label>
-          <input type="text" id="username" name="username" required />
+    <!-- Header Section -->
+    <header class="header-wrapper">
+      <div class="logo">Dish Dive</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="logIn.html">Login</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="contactUs.html">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
 
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" required />
+    <!-- Main Content -->
+    <main class="loginContainer">
+      <div class="loginBox">
+        <h2>Login to Your Account</h2>
+        <form action="login_process.php" method="post" class="loginForm">
+          <div class="formGroup">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required />
+          </div>
 
-          <button type="submit">Log In</button>
+          <div class="formGroup">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+
+          <button type="submit" class="submitButton">Log In</button>
         </form>
-        <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+        <p class="signupPrompt">
+          Don't have an account? <a href="signup.html">Sign up here</a>
+        </p>
       </div>
     </main>
-    <footer>@Copyright by Tou Xiong Lor</footer>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Tou Xiong Lor. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>
