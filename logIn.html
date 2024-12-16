@@ -3,51 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login - Dish Dive</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Login Page</title>
     <link rel="stylesheet" href="css/login.css" />
   </head>
   <body>
-    <!-- Header Section -->
+    <!-- Header -->
     <header class="header-wrapper">
-      <div class="logo">Dish Dive</div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="logIn.html">Login</a></li>
-          <li><a href="recipes.html">Recipes</a></li>
-          <li><a href="aboutUs.html">About Us</a></li>
-          <li><a href="contactUs.html">Contacts</a></li>
-        </ul>
-      </nav>
+      <div class="logo">
+        <a href="index.html">Dish Dive</a>
+      </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="loginContainer">
-      <div class="loginBox">
-        <h2>Login to Your Account</h2>
-        <form action="login_process.php" method="post" class="loginForm">
-          <div class="formGroup">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required />
-          </div>
+    <!-- Left Section -->
+    <div class="left-section">
+      <h2>Welcome Back</h2>
+      <p>Log in to access your account and explore new features.</p>
+    </div>
 
-          <div class="formGroup">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required />
-          </div>
+    <!-- Right Section -->
+    <div class="right-section">
+      <h1>Log in with Email</h1>
+      <form>
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="yourname@example.com"
+          required
+        />
 
-          <button type="submit" class="submitButton">Log In</button>
-        </form>
-        <p class="signupPrompt">
-          Don't have an account? <a href="signup.html">Sign up here</a>
-        </p>
-      </div>
-    </main>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+          required
+        />
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2024 Tou Xiong Lor. All Rights Reserved.</p>
-    </footer>
+        <button type="submit">Log In</button>
+      </form>
+      <p>Don't have an account? <a href="/signUp.html">Sign Up</a></p>
+    </div>
+    <script src="javaScripts/logIn.js"></script>
   </body>
 </html>

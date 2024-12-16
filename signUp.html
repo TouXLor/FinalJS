@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/signUp.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header-wrapper">
+      <div class="logo">
+        <a href="index.html">Dish Dive</a>
+      </div>
+    </header>
+
+    <!-- Left Section - Sign Up Form -->
+    <div class="signupLeft">
+      <h1>Create Account</h1>
+      <form action="#" method="post">
+        <div class="formGroup">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="formGroup">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="formGroup">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="formGroup">
+          <label for="confirmPassword">Repeat Password</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            required
+          />
+        </div>
+        <button type="submit" class="signupBtn">Sign Up</button>
+      </form>
+      <p class="signinLink">
+        Already have an account? <a href="logIn.html">Log In</a>
+      </p>
+    </div>
+
+    <!-- Right Section - Image -->
+    <div class="signupRight">
+      <h2>Welcome</h2>
+      <p>Register to access your account and explore new features.</p>
+    </div>
+    <script src="javaScripts/signUp.js"></script>
+  </body>
+</html>

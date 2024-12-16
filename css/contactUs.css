@@ -55,7 +55,7 @@
 .submitButton {
   width: 100%;
   padding: 12px;
-  background-color: var(--secondary-color);
+  background-color: #2c79c6;
   color: #fff;
   border: none;
   border-radius: 5px;

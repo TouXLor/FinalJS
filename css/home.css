@@ -34,12 +34,13 @@
 .trendingButton {
   display: inline-block;
   padding: 12px 25px;
-  background-color: var(--secondary-color);
+  background-color: #2b619f;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
   font-size: 1rem;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 18px;
 }
 
 .trendingButton:hover {
