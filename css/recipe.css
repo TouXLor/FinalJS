@@ -34,3 +34,127 @@
   background-color: #155a9e; /* Even darker blue for the active button */
   color: #fff; /* Ensures contrast on the active button */
 }
+.recipesContainer {
+  padding: 20px;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.searchBar input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.searchBar button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #1c86ee;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.recipeCategories {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.recipeCard button {
+  background-color: #1c86ee;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.recipeCategories button.active {
+  background-color: #1c86ee;
+  color: white;
+}
+
+.recipeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Always 3 equal columns */
+  gap: 20px; /* Space between grid items */
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 1200px; /* Limits the overall grid width */
+}
+
+.recipeCard {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+  color: black;
+  transition: transform 0.3s ease;
+}
+
+/* Images inside cards */
+.recipeCard img {
+  width: 100%;
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Maintain image proportions */
+}
+
+/* If there is only 1 item, restrict width */
+.recipeGrid .recipeCard:only-child {
+  grid-column: span 1; /* Prevents full-width stretching */
+  margin: auto; /* Center it horizontally */
+  width: 300px; /* Restrict width to match other cards */
+}
+
+.no-recipes {
+  text-align: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Modal Overlay */
+.recipe-modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Modal Content */
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  color: #333;
+}
+
+/* Close Button */
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}

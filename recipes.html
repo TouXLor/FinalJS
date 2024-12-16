@@ -29,22 +29,69 @@
         <h2>Explore Recipes</h2>
       </section>
 
-      <!-- Recipe Categories -->
-      <div class="recipeCategories">
-        <button class="active">All</button>
-        <button>Appetizers</button>
-        <button>Starters</button>
-        <button>Main Courses</button>
-        <button>Side Dishes</button>
-        <button>Desserts</button>
+      <!-- Search Bar -->
+      <div class="searchBar">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search for recipes..."
+        />
+        <button id="searchBtn">Search</button>
       </div>
 
+      <!-- Recipe Categories -->
+      <div class="recipeCategories">
+        <button class="active" data-category="all">All</button>
+        <button data-category="appetizers">Appetizers</button>
+        <button data-category="starters">Starters</button>
+        <button data-category="main-courses">Main Courses</button>
+        <button data-category="side-dishes">Side Dishes</button>
+        <button data-category="desserts">Desserts</button>
+      </div>
 
+      <!-- Recipe Grid -->
+      <section class="recipeGrid">
+        <!-- Example Recipe Card -->
+        <div class="recipeCard" data-category="desserts">
+          <img src="images/choco_cake.jpeg" alt="Chocolate Cake" />
+          <h3>Chocolate Cake</h3>
+          <p>A rich and moist chocolate cake, perfect for any occasion.</p>
+          <button>View Recipe</button>
+        </div>
+
+        <div class="recipeCard" data-category="main-courses">
+          <img src="images/pasta.jpeg" alt="Spaghetti Bolognese" />
+          <h3>Spaghetti Bolognese</h3>
+          <p>A classic Italian pasta dish with rich tomato sauce.</p>
+          <button>View Recipe</button>
+        </div>
+
+        <div class="recipeCard" data-category="appetizers">
+          <img src="images/bruschetta.jpeg" alt="Bruschetta" />
+          <h3>Bruschetta</h3>
+          <p>Crunchy bread topped with fresh tomatoes and basil.</p>
+          <button>View Recipe</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal Placeholder for Recipe Details -->
+    <div id="recipeModal" class="recipe-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2 id="recipeTitle">Recipe Details</h2>
+        <p>
+          Ideally takes the user to another page with full details on the recipe
+          and instructions to cook.
+        </p>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer>
       <p>&copy; 2024 Tou Xiong Lor. All Rights Reserved.</p>
       <p>Designed by Tou Xiong Lor</p>
     </footer>
+    <script src="javaScripts/recipe.js"></script>
   </body>
 </html>
